@@ -2,8 +2,8 @@
 import os, glob, subprocess
 
 #need our aliases
-surf='/home/matt/Software/VASPreleasePack/codeRelease/surfProcessingRelease/debug/surfProcessing'
-vasp='/home/matt/Software/VASPreleasePack/codeRelease/vaspRelease/debug/vasp'
+surf='/home/yodan/Documents/VASPreleasePack/codeRelease/surfProcessingRelease/debug/surfProcessing'
+vasp='/home/yodan/Documents/VASPreleasePack/codeRelease/vaspRelease/debug/vasp'
 
 
 #check to see if VASP scores and VASP pockets directory exists
@@ -39,7 +39,7 @@ for sur in glob.glob('../VASP/pockets/*.SURF'):
 	
 	arg2 = (surf,'-surveyVolume',sur)
 	str_arg2 = [ str(x) for x in arg2 ]
-	out = open('../VASP/pockets/{n}.vol.txt','w')
+	out = open(f'../VASP/pockets/{n}.vol.txt','w')
 	subprocess.run(str_arg2, stdout=out)
 
 #get the score of each structure generated

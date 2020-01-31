@@ -26,7 +26,7 @@ tr = 2 #input()
 
 #here are just some housekeeping variables, functions and 
 #initialized arrays to be used in the following script
-surf='/home/matt/Software/VASPreleasePack/codeRelease/surfProcessingRelease/debug/surfProcessing'
+surf='/home/yodan/Documents/VASPreleasePack/codeRelease/surfProcessingRelease/debug/surfProcessing'
 rotates = int(360/float(deg1))
 conformations = [-30,0,30,150,180,210]
 pocket=[]

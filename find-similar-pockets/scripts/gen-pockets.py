@@ -3,7 +3,7 @@ import os, glob, subprocess
 
 alphas = 80
 
-fpocket = '/home/matt/Software/fpocket/bin/fpocket'
+fpocket = '/home/yodan/Documents/fpocket/bin/fpocket'
 
 for i in glob.glob('../PDB/*.pdb'):
 	args=(fpocket,'-f',i,'-i',alphas)
